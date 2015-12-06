@@ -1,0 +1,28 @@
+<html>
+<head>
+	<title>My Cat Clicker</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+</head>
+<body>
+<div>
+	<img class='cat' src='cat.jpg'>
+	<script>
+		$(document).ready(function(){
+			var clicks = 0;
+			$('.cat').click(function(){
+				clicks += 1;
+				$('.clicks').html(clicks)
+			})
+
+
+		})
+		</script>
+
+</div>
+<div class='display'>
+	<p>You've clicked this many:</p>
+	<p class='clicks'></p>
+</div>
+</body>
+</html>
+
